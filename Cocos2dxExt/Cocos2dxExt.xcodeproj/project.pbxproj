@@ -280,6 +280,7 @@
 		E00FDDB5178573EA00D021D6 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E00FDDB4178573EA00D021D6 /* libwebsockets.a */; };
 		E00FDDBB178573EA00D021D6 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E00FDDBA178573EA00D021D6 /* AppDelegate.cpp */; };
 		E00FDDBE178573EA00D021D6 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E00FDDBD178573EA00D021D6 /* HelloWorldScene.cpp */; };
+		E00FDDC617857AA000D021D6 /* EXMainMenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E00FDDC417857AA000D021D6 /* EXMainMenuScene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +874,8 @@
 		E00FDDBA178573EA00D021D6 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		E00FDDBC178573EA00D021D6 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		E00FDDBD178573EA00D021D6 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		E00FDDC417857AA000D021D6 /* EXMainMenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EXMainMenuScene.cpp; path = Classes/EXMainMenuScene.cpp; sourceTree = "<group>"; };
+		E00FDDC517857AA000D021D6 /* EXMainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXMainMenuScene.h; path = Classes/EXMainMenuScene.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2095,6 +2098,8 @@
 			children = (
 				E00FDDB9178573EA00D021D6 /* AppDelegate.h */,
 				E00FDDBA178573EA00D021D6 /* AppDelegate.cpp */,
+				E00FDDC517857AA000D021D6 /* EXMainMenuScene.h */,
+				E00FDDC417857AA000D021D6 /* EXMainMenuScene.cpp */,
 				E00FDDBC178573EA00D021D6 /* HelloWorldScene.h */,
 				E00FDDBD178573EA00D021D6 /* HelloWorldScene.cpp */,
 			);
@@ -2423,6 +2428,7 @@
 				E00FDDAD178573EA00D021D6 /* cpVect.c in Sources */,
 				E00FDDBB178573EA00D021D6 /* AppDelegate.cpp in Sources */,
 				E00FDDBE178573EA00D021D6 /* HelloWorldScene.cpp in Sources */,
+				E00FDDC617857AA000D021D6 /* EXMainMenuScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2564,6 +2570,7 @@
 				E00FDDC3178573EA00D021D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
