@@ -2,21 +2,20 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+USING_NS_CC;
 
-class HelloWorld : public cocos2d::CCLayer
+class HelloWorld : public CCLayer
 {
 public:
-    // Method 'init' in cocos2d-x returns bool, instead of 'id' in cocos2d-iphone (an object pointer)
+    HelloWorld();
+    ~HelloWorld();
     virtual bool init();
-
-    // there's no 'id' in cpp, so we recommend to return the class instance pointer
-    static cocos2d::CCScene* scene();
-    
-    // a selector callback
+    static CCScene* scene();
     void menuCloseCallback(CCObject* pSender);
-
-    // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
+    
+private:
+    void initData();
 };
 
 #endif // __HELLOWORLD_SCENE_H__

@@ -7,6 +7,7 @@
 //
 
 #include "EXMainMenuScene.h"
+#include "EXTestScene.h"
 
 EXMainMenuScene::EXMainMenuScene()
 {
@@ -41,8 +42,8 @@ void EXMainMenuScene::initData()
     m_listData = CCArray::create();
     m_listData->retain();
     
-    m_listData->addObject(CCString::create("DADynamic CCLabelTTF - 动态显示数字"));
-    m_listData->addObject(CCString::create("Create Gray Sprite - 创建灰色图"));
+    m_listData->addObject(CCString::create("Dynamic CCLabelTTF - 动态显示数字"));
+    m_listData->addObject(CCString::create("Gray Sprite - 创建灰色图"));
     m_listData->addObject(CCString::create("Turn Card - 翻牌效果"));
     m_listData->addObject(CCString::create("Zoom Controller - 场景多点聚焦缩放"));
     
@@ -63,6 +64,9 @@ void EXMainMenuScene::initData()
 void EXMainMenuScene::tableCellTouched(CCTableView* table, CCTableViewCell* cell)
 {
     CCLOG("cell touched at index: %i", cell->getIdx());
+    int idx = cell->getIdx();
+    CCString* string = (CCString*)m_listData->objectAtIndex(idx);
+    CCDirector::sharedDirector()->replaceScene(EXTestScene::scene(cell->getIdx(), string->getCString()));
 }
 
 CCSize EXMainMenuScene::tableCellSizeForIndex(CCTableView *table, unsigned int idx)

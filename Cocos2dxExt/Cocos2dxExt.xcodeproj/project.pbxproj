@@ -281,6 +281,17 @@
 		E00FDDBB178573EA00D021D6 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E00FDDBA178573EA00D021D6 /* AppDelegate.cpp */; };
 		E00FDDBE178573EA00D021D6 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E00FDDBD178573EA00D021D6 /* HelloWorldScene.cpp */; };
 		E00FDDC617857AA000D021D6 /* EXMainMenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E00FDDC417857AA000D021D6 /* EXMainMenuScene.cpp */; };
+		E00FDDCA1785874F00D021D6 /* EXTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E00FDDC81785874F00D021D6 /* EXTestScene.cpp */; };
+		E0322100178D38C000E038BB /* EXTestDynamicLabelLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E03220FE178D38C000E038BB /* EXTestDynamicLabelLayer.cpp */; };
+		E0322104178D3D4E00E038BB /* EXGraySprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322102178D3D4E00E038BB /* EXGraySprite.cpp */; };
+		E0322107178D3D9600E038BB /* EXTestGraySpriteLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322105178D3D9600E038BB /* EXTestGraySpriteLayer.cpp */; };
+		E032210B178D407800E038BB /* EXTurnCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322109178D407800E038BB /* EXTurnCard.cpp */; };
+		E032210E178D419300E038BB /* EXTestTurnCardLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E032210C178D419300E038BB /* EXTestTurnCardLayer.cpp */; };
+		E0322111178D43C900E038BB /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E032210F178D43C900E038BB /* 1.jpg */; };
+		E0322112178D43C900E038BB /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0322110178D43C900E038BB /* 2.jpg */; };
+		E0322116178D45FF00E038BB /* EXZoomController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322114178D45FF00E038BB /* EXZoomController.cpp */; };
+		E0322119178D467F00E038BB /* EXTestZoomControllerLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322117178D467F00E038BB /* EXTestZoomControllerLayer.cpp */; };
+		E0BFE3DF178698930064F9D3 /* EXDynamicLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0BFE3DD178698930064F9D3 /* EXDynamicLabel.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -876,6 +887,26 @@
 		E00FDDBD178573EA00D021D6 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		E00FDDC417857AA000D021D6 /* EXMainMenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EXMainMenuScene.cpp; path = Classes/EXMainMenuScene.cpp; sourceTree = "<group>"; };
 		E00FDDC517857AA000D021D6 /* EXMainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXMainMenuScene.h; path = Classes/EXMainMenuScene.h; sourceTree = "<group>"; };
+		E00FDDC81785874F00D021D6 /* EXTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EXTestScene.cpp; path = Classes/EXTestScene.cpp; sourceTree = "<group>"; };
+		E00FDDC91785874F00D021D6 /* EXTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTestScene.h; path = Classes/EXTestScene.h; sourceTree = "<group>"; };
+		E03220FE178D38C000E038BB /* EXTestDynamicLabelLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXTestDynamicLabelLayer.cpp; sourceTree = "<group>"; };
+		E03220FF178D38C000E038BB /* EXTestDynamicLabelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTestDynamicLabelLayer.h; sourceTree = "<group>"; };
+		E0322102178D3D4E00E038BB /* EXGraySprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXGraySprite.cpp; sourceTree = "<group>"; };
+		E0322103178D3D4E00E038BB /* EXGraySprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXGraySprite.h; sourceTree = "<group>"; };
+		E0322105178D3D9600E038BB /* EXTestGraySpriteLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXTestGraySpriteLayer.cpp; sourceTree = "<group>"; };
+		E0322106178D3D9600E038BB /* EXTestGraySpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTestGraySpriteLayer.h; sourceTree = "<group>"; };
+		E0322109178D407800E038BB /* EXTurnCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXTurnCard.cpp; sourceTree = "<group>"; };
+		E032210A178D407800E038BB /* EXTurnCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTurnCard.h; sourceTree = "<group>"; };
+		E032210C178D419300E038BB /* EXTestTurnCardLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXTestTurnCardLayer.cpp; sourceTree = "<group>"; };
+		E032210D178D419300E038BB /* EXTestTurnCardLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTestTurnCardLayer.h; sourceTree = "<group>"; };
+		E032210F178D43C900E038BB /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = Resources/1.jpg; sourceTree = "<group>"; };
+		E0322110178D43C900E038BB /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = Resources/2.jpg; sourceTree = "<group>"; };
+		E0322114178D45FF00E038BB /* EXZoomController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXZoomController.cpp; sourceTree = "<group>"; };
+		E0322115178D45FF00E038BB /* EXZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXZoomController.h; sourceTree = "<group>"; };
+		E0322117178D467F00E038BB /* EXTestZoomControllerLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXTestZoomControllerLayer.cpp; sourceTree = "<group>"; };
+		E0322118178D467F00E038BB /* EXTestZoomControllerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTestZoomControllerLayer.h; sourceTree = "<group>"; };
+		E0BFE3DD178698930064F9D3 /* EXDynamicLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXDynamicLabel.cpp; sourceTree = "<group>"; };
+		E0BFE3DE178698930064F9D3 /* EXDynamicLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXDynamicLabel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -947,6 +978,8 @@
 		E00FDA28178573E300D021D6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E032210F178D43C900E038BB /* 1.jpg */,
+				E0322110178D43C900E038BB /* 2.jpg */,
 				E00FDA29178573E300D021D6 /* CloseNormal.png */,
 				E00FDA2B178573E300D021D6 /* CloseSelected.png */,
 				E00FDA2D178573E300D021D6 /* Default.png */,
@@ -2096,14 +2129,68 @@
 		E00FDDB8178573EA00D021D6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E0322113178D45FF00E038BB /* ZoomController */,
+				E0322108178D406500E038BB /* TestTurnCard */,
+				E0322101178D3D3200E038BB /* TestGraySprite */,
+				E0BFE3DC178698930064F9D3 /* TestDynamicLabel */,
 				E00FDDB9178573EA00D021D6 /* AppDelegate.h */,
 				E00FDDBA178573EA00D021D6 /* AppDelegate.cpp */,
 				E00FDDC517857AA000D021D6 /* EXMainMenuScene.h */,
 				E00FDDC417857AA000D021D6 /* EXMainMenuScene.cpp */,
+				E00FDDC91785874F00D021D6 /* EXTestScene.h */,
+				E00FDDC81785874F00D021D6 /* EXTestScene.cpp */,
 				E00FDDBC178573EA00D021D6 /* HelloWorldScene.h */,
 				E00FDDBD178573EA00D021D6 /* HelloWorldScene.cpp */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		E0322101178D3D3200E038BB /* TestGraySprite */ = {
+			isa = PBXGroup;
+			children = (
+				E0322103178D3D4E00E038BB /* EXGraySprite.h */,
+				E0322102178D3D4E00E038BB /* EXGraySprite.cpp */,
+				E0322106178D3D9600E038BB /* EXTestGraySpriteLayer.h */,
+				E0322105178D3D9600E038BB /* EXTestGraySpriteLayer.cpp */,
+			);
+			name = TestGraySprite;
+			path = Classes/TestGraySprite;
+			sourceTree = "<group>";
+		};
+		E0322108178D406500E038BB /* TestTurnCard */ = {
+			isa = PBXGroup;
+			children = (
+				E032210A178D407800E038BB /* EXTurnCard.h */,
+				E0322109178D407800E038BB /* EXTurnCard.cpp */,
+				E032210D178D419300E038BB /* EXTestTurnCardLayer.h */,
+				E032210C178D419300E038BB /* EXTestTurnCardLayer.cpp */,
+			);
+			name = TestTurnCard;
+			path = Classes/TestTurnCard;
+			sourceTree = "<group>";
+		};
+		E0322113178D45FF00E038BB /* ZoomController */ = {
+			isa = PBXGroup;
+			children = (
+				E0322115178D45FF00E038BB /* EXZoomController.h */,
+				E0322114178D45FF00E038BB /* EXZoomController.cpp */,
+				E0322118178D467F00E038BB /* EXTestZoomControllerLayer.h */,
+				E0322117178D467F00E038BB /* EXTestZoomControllerLayer.cpp */,
+			);
+			name = ZoomController;
+			path = Classes/ZoomController;
+			sourceTree = "<group>";
+		};
+		E0BFE3DC178698930064F9D3 /* TestDynamicLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E0BFE3DE178698930064F9D3 /* EXDynamicLabel.h */,
+				E0BFE3DD178698930064F9D3 /* EXDynamicLabel.cpp */,
+				E03220FF178D38C000E038BB /* EXTestDynamicLabelLayer.h */,
+				E03220FE178D38C000E038BB /* EXTestDynamicLabelLayer.cpp */,
+			);
+			name = TestDynamicLabel;
+			path = Classes/TestDynamicLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2169,6 +2256,8 @@
 				E00FDA3E178573E300D021D6 /* iTunesArtwork in Resources */,
 				E00FDADD178573E400D021D6 /* ChangeLog in Resources */,
 				E00FDC51178573E800D021D6 /* project.pbxproj in Resources */,
+				E0322111178D43C900E038BB /* 1.jpg in Resources */,
+				E0322112178D43C900E038BB /* 2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2429,6 +2518,15 @@
 				E00FDDBB178573EA00D021D6 /* AppDelegate.cpp in Sources */,
 				E00FDDBE178573EA00D021D6 /* HelloWorldScene.cpp in Sources */,
 				E00FDDC617857AA000D021D6 /* EXMainMenuScene.cpp in Sources */,
+				E00FDDCA1785874F00D021D6 /* EXTestScene.cpp in Sources */,
+				E0BFE3DF178698930064F9D3 /* EXDynamicLabel.cpp in Sources */,
+				E0322100178D38C000E038BB /* EXTestDynamicLabelLayer.cpp in Sources */,
+				E0322104178D3D4E00E038BB /* EXGraySprite.cpp in Sources */,
+				E0322107178D3D9600E038BB /* EXTestGraySpriteLayer.cpp in Sources */,
+				E032210B178D407800E038BB /* EXTurnCard.cpp in Sources */,
+				E032210E178D419300E038BB /* EXTestTurnCardLayer.cpp in Sources */,
+				E0322116178D45FF00E038BB /* EXZoomController.cpp in Sources */,
+				E0322119178D467F00E038BB /* EXTestZoomControllerLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
