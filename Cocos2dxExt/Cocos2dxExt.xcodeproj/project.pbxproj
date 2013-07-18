@@ -291,6 +291,7 @@
 		E0322112178D43C900E038BB /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0322110178D43C900E038BB /* 2.jpg */; };
 		E0322116178D45FF00E038BB /* EXZoomController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322114178D45FF00E038BB /* EXZoomController.cpp */; };
 		E0322119178D467F00E038BB /* EXTestZoomControllerLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322117178D467F00E038BB /* EXTestZoomControllerLayer.cpp */; };
+		E05B4B1A179774CF00AD7990 /* coc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E05B4B19179774CF00AD7990 /* coc.jpg */; };
 		E0BFE3DF178698930064F9D3 /* EXDynamicLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0BFE3DD178698930064F9D3 /* EXDynamicLabel.cpp */; };
 /* End PBXBuildFile section */
 
@@ -905,6 +906,7 @@
 		E0322115178D45FF00E038BB /* EXZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXZoomController.h; sourceTree = "<group>"; };
 		E0322117178D467F00E038BB /* EXTestZoomControllerLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXTestZoomControllerLayer.cpp; sourceTree = "<group>"; };
 		E0322118178D467F00E038BB /* EXTestZoomControllerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTestZoomControllerLayer.h; sourceTree = "<group>"; };
+		E05B4B19179774CF00AD7990 /* coc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coc.jpg; path = Resources/coc.jpg; sourceTree = "<group>"; };
 		E0BFE3DD178698930064F9D3 /* EXDynamicLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXDynamicLabel.cpp; sourceTree = "<group>"; };
 		E0BFE3DE178698930064F9D3 /* EXDynamicLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXDynamicLabel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -978,6 +980,7 @@
 		E00FDA28178573E300D021D6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E05B4B19179774CF00AD7990 /* coc.jpg */,
 				E032210F178D43C900E038BB /* 1.jpg */,
 				E0322110178D43C900E038BB /* 2.jpg */,
 				E00FDA29178573E300D021D6 /* CloseNormal.png */,
@@ -2258,6 +2261,7 @@
 				E00FDC51178573E800D021D6 /* project.pbxproj in Resources */,
 				E0322111178D43C900E038BB /* 1.jpg in Resources */,
 				E0322112178D43C900E038BB /* 2.jpg in Resources */,
+				E05B4B1A179774CF00AD7990 /* coc.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

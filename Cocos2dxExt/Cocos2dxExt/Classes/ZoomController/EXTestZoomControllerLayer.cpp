@@ -30,20 +30,16 @@ bool EXTestZoomControllerLayer::init()
 }
 
 void EXTestZoomControllerLayer::initData()
-{
-    CCSize size = CCDirector::sharedDirector()->getWinSize();
-    
-    for (int i = 0; i < 4; ++i) {
-        for (int j = 0; j < 5; ++j) {
-            CCSprite* normalSprite = CCSprite::create("HelloWorld.png");
-            normalSprite->setAnchorPoint(CCPointZero);
-            normalSprite->setPosition(ccp(j * 480, i * 320));
-            addChild(normalSprite);
-        }
-    }
+{    
+    CCSprite* normalSprite = CCSprite::create("coc.jpg");
+    normalSprite->setAnchorPoint(CCPointZero);
+    normalSprite->setPosition(CCPointZero);
+    addChild(normalSprite);
     
     EXZoomController* controller = EXZoomController::controllerWithNode(this);
-    controller->setBoundingRect(CCRectMake(0, 0, 480 * 5, 320 * 4));
+    controller->setWindowRect(CCRectMake(0, 0, 1024, 768));
+    CCRect r = normalSprite->getTextureRect();
+    controller->setBoundingRect(r);
     controller->zoomOutLimit = controller->getOptimalZoomOutLimit();
     controller->zoomInLimit = 2.0f;
     addChild(controller);

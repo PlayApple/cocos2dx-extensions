@@ -100,17 +100,17 @@ private:
     CCPoint _winTr;
     CCPoint _winBl;
     
-    bool _centerOnPinch;
-    bool _zoomOnDoubleTap;
-    float _zoomRate;
-    float _zoomInLimit;
-    float _zoomOutLimit;
-    float _swipeVelocityMultiplier;
-    float _scrollDuration;
-    float _scrollDamping;
-    float _pinchDamping;
-    float _pinchDistanceThreshold;
-    float _doubleTapZoomDuration;
+//    bool _centerOnPinch;
+//    bool _zoomOnDoubleTap;
+//    float _zoomRate;
+//    float _zoomInLimit;
+//    float _zoomOutLimit;
+//    float _swipeVelocityMultiplier;
+//    float _scrollDuration;
+//    float _scrollDamping;
+//    float _pinchDamping;
+//    float _pinchDistanceThreshold;
+//    float _doubleTapZoomDuration;
 
     // internals
     float _time;

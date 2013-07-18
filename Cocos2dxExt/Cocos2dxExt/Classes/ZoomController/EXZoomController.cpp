@@ -50,17 +50,17 @@ bool EXZoomController::initWithNode(CCNode* node) {
     _winBl.x = 0;
     _winBl.y = 0;
     
-    _centerOnPinch = true;
-    _zoomOnDoubleTap = true;
-    _zoomRate = 1/500.0f;
-    _zoomInLimit = 1.0f;
-    _zoomOutLimit = 0.5f;
-    _swipeVelocityMultiplier = 400;
-    _scrollDuration = .4;
-    _scrollDamping = .4;
-    _pinchDamping = .9;
-    _pinchDistanceThreshold = 3;
-    _doubleTapZoomDuration = .2;
+    centerOnPinch = true;
+    zoomOnDoubleTap = true;
+    zoomRate = 1/500.0f;
+    zoomInLimit = 1.0f;
+    zoomOutLimit = 0.5f;
+    swipeVelocityMultiplier = 400;
+    scrollDuration = .4;
+    scrollDamping = .4;
+    pinchDamping = .9;
+    pinchDistanceThreshold = 3;
+    doubleTapZoomDuration = .2;
     
 //    setTouchEnabled(true);
     
@@ -243,7 +243,7 @@ void EXZoomController::ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent){
 		endScroll(pt);
         
         //handle double-tap zooming
-//        if (_zoomOnDoubleTap /**&& [touch tapCount] == 2*/)
+//        if (zoomOnDoubleTap /**&& [touch tapCount] == 2*/)
 //            handleDoubleTapAt(pt);
 	}
 	
@@ -259,21 +259,21 @@ void EXZoomController::ccTouchesCancelled(CCSet *pTouches, CCEvent *pEvent){
 }
 
 void EXZoomController::handleDoubleTapAt(CCPoint pt) {
-    float mid = (_zoomInLimit + _zoomOutLimit)/2;
+    float mid = (zoomInLimit + zoomOutLimit)/2;
     
     //closer to being zoomed out? then zoom in, else zoom out
     if (_node->getScale() < mid)
-        zoomInOnPoint(pt, _doubleTapZoomDuration);
+        zoomInOnPoint(pt, doubleTapZoomDuration);
     else
-        zoomOutOnPoint(pt, _doubleTapZoomDuration);
+        zoomOutOnPoint(pt, doubleTapZoomDuration);
 }
 
 void EXZoomController::zoomInOnPoint(CCPoint pt, float duration) {
-    zoomOnPoint(pt, duration, _zoomInLimit);
+    zoomOnPoint(pt, duration, zoomInLimit);
 }
 
 void EXZoomController::zoomOutOnPoint(CCPoint pt, float duration) {
-    zoomOnPoint(pt, duration, _zoomOutLimit);
+    zoomOnPoint(pt, duration, zoomOutLimit);
 }
 
 void EXZoomController::zoomOnPoint(CCPoint pt, float duration, float scale) {
@@ -342,7 +342,7 @@ void EXZoomController::beginScroll(CCPoint pos) {
 void EXZoomController::moveScroll(CCPoint pos) {
     //dampen value
 	pos = ccpSub(pos, _firstTouch);
-	pos = ccpMult(pos, _scrollDamping * _node->getScale());
+	pos = ccpMult(pos, scrollDamping * _node->getScale());
     
     //debug
     //NSLog(@"Moving to: (%.2f, %.2f)", pos.x, pos.y);
@@ -356,7 +356,7 @@ void EXZoomController::endScroll(CCPoint pos) {
     //Only perform a velocity scroll if we have a good amount of history
 	if (_timePointStampCounter > 3) {
         //calculate velocity
-        CCPoint velocity = ccpMult(getHistoricSpeed(), _swipeVelocityMultiplier * _node->getScale());
+        CCPoint velocity = ccpMult(getHistoricSpeed(), swipeVelocityMultiplier * _node->getScale());
         
         //Make sure we have a reasonable speed (more than 5 pts away)
 		if (ccpLengthSQ(velocity) > 5*5) {
@@ -365,7 +365,7 @@ void EXZoomController::endScroll(CCPoint pos) {
 			newPos = boundPos(newPos);
 			
             //create the action
-			CCMoveTo* moveTo = CCMoveTo::create(_scrollDuration, newPos);
+			CCMoveTo* moveTo = CCMoveTo::create(scrollDuration, newPos);
 			CCEaseOut* ease = CCEaseOut::create(moveTo, 3);
 			
             //unconditional stop; cocos handles this properly
@@ -399,25 +399,25 @@ void EXZoomController::moveZoom(CCPoint pt, CCPoint pt2) {
 	float diff = (length-_firstLength);
     
     //ignore small movements
-    if (fabs(diff) < _pinchDistanceThreshold)
+    if (fabs(diff) < pinchDistanceThreshold)
         return;
     
 	//calculate new scale
-	float factor = diff * _zoomRate * _pinchDamping;
+	float factor = diff * zoomRate * pinchDamping;
 	float newScale = _oldScale + factor;
 	
     //bound scale
-	if (newScale > _zoomInLimit)
-		newScale = _zoomInLimit;
-	else if (newScale < _zoomOutLimit)
-		newScale = _zoomOutLimit;
+	if (newScale > zoomInLimit)
+		newScale = zoomInLimit;
+	else if (newScale < zoomOutLimit)
+		newScale = zoomOutLimit;
     
     //set the new scale
 	_node->setScale(newScale);
     
     //center on midpoint of pinch
-    if (_centerOnPinch)
-        centerOnPoint(_firstTouch, _scrollDamping);
+    if (centerOnPinch)
+        centerOnPoint(_firstTouch, scrollDamping);
     else
         updatePosition(_node->getPosition());
 }
