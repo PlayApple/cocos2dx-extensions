@@ -10,7 +10,6 @@
 # Compiled Static libraries
 *.lai
 *.la
-*.a
 
 # Mac igonre file
 *.DS_Store
