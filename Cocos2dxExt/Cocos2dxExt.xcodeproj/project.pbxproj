@@ -291,8 +291,13 @@
 		E0322112178D43C900E038BB /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0322110178D43C900E038BB /* 2.jpg */; };
 		E0322116178D45FF00E038BB /* EXZoomController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322114178D45FF00E038BB /* EXZoomController.cpp */; };
 		E0322119178D467F00E038BB /* EXTestZoomControllerLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322117178D467F00E038BB /* EXTestZoomControllerLayer.cpp */; };
+		E03FF26F17A74E1B00DA65A7 /* bg_theme1.png in Resources */ = {isa = PBXBuildFile; fileRef = E03FF26E17A74E1B00DA65A7 /* bg_theme1.png */; };
 		E05B4B1A179774CF00AD7990 /* coc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E05B4B19179774CF00AD7990 /* coc.jpg */; };
+		E0ACBB4C17990FFA0062C3C6 /* EXTestTriangleSpriteLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0ACBB4A17990FFA0062C3C6 /* EXTestTriangleSpriteLayer.cpp */; };
 		E0BFE3DF178698930064F9D3 /* EXDynamicLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0BFE3DD178698930064F9D3 /* EXDynamicLabel.cpp */; };
+		E0E5D98117A9E71C00B5031F /* EXWebViewLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E5D97E17A9E71C00B5031F /* EXWebViewLayer.mm */; };
+		E0E5D98217A9E71C00B5031F /* EXUIWebViewBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E5D97F17A9E71C00B5031F /* EXUIWebViewBridge.mm */; };
+		E0E5D98517A9E7A300B5031F /* EXTestWebViewLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0E5D98317A9E7A300B5031F /* EXTestWebViewLayer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -906,9 +911,18 @@
 		E0322115178D45FF00E038BB /* EXZoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXZoomController.h; sourceTree = "<group>"; };
 		E0322117178D467F00E038BB /* EXTestZoomControllerLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXTestZoomControllerLayer.cpp; sourceTree = "<group>"; };
 		E0322118178D467F00E038BB /* EXTestZoomControllerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTestZoomControllerLayer.h; sourceTree = "<group>"; };
+		E03FF26E17A74E1B00DA65A7 /* bg_theme1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_theme1.png; path = Resources/bg_theme1.png; sourceTree = "<group>"; };
 		E05B4B19179774CF00AD7990 /* coc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coc.jpg; path = Resources/coc.jpg; sourceTree = "<group>"; };
+		E0ACBB4A17990FFA0062C3C6 /* EXTestTriangleSpriteLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXTestTriangleSpriteLayer.cpp; sourceTree = "<group>"; };
+		E0ACBB4B17990FFA0062C3C6 /* EXTestTriangleSpriteLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTestTriangleSpriteLayer.h; sourceTree = "<group>"; };
 		E0BFE3DD178698930064F9D3 /* EXDynamicLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXDynamicLabel.cpp; sourceTree = "<group>"; };
 		E0BFE3DE178698930064F9D3 /* EXDynamicLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXDynamicLabel.h; sourceTree = "<group>"; };
+		E0E5D97D17A9E71C00B5031F /* EXWebViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXWebViewLayer.h; sourceTree = "<group>"; };
+		E0E5D97E17A9E71C00B5031F /* EXWebViewLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EXWebViewLayer.mm; sourceTree = "<group>"; };
+		E0E5D97F17A9E71C00B5031F /* EXUIWebViewBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EXUIWebViewBridge.mm; sourceTree = "<group>"; };
+		E0E5D98017A9E71C00B5031F /* EXUIWebViewBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXUIWebViewBridge.h; sourceTree = "<group>"; };
+		E0E5D98317A9E7A300B5031F /* EXTestWebViewLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXTestWebViewLayer.cpp; sourceTree = "<group>"; };
+		E0E5D98417A9E7A300B5031F /* EXTestWebViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTestWebViewLayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -980,6 +994,7 @@
 		E00FDA28178573E300D021D6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E03FF26E17A74E1B00DA65A7 /* bg_theme1.png */,
 				E05B4B19179774CF00AD7990 /* coc.jpg */,
 				E032210F178D43C900E038BB /* 1.jpg */,
 				E0322110178D43C900E038BB /* 2.jpg */,
@@ -2132,6 +2147,8 @@
 		E00FDDB8178573EA00D021D6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E0E5D97C17A9E6C000B5031F /* TestWebView */,
+				E0ACBB4917990FF00062C3C6 /* TestTriangleSprite */,
 				E0322113178D45FF00E038BB /* ZoomController */,
 				E0322108178D406500E038BB /* TestTurnCard */,
 				E0322101178D3D3200E038BB /* TestGraySprite */,
@@ -2184,6 +2201,16 @@
 			path = Classes/ZoomController;
 			sourceTree = "<group>";
 		};
+		E0ACBB4917990FF00062C3C6 /* TestTriangleSprite */ = {
+			isa = PBXGroup;
+			children = (
+				E0ACBB4B17990FFA0062C3C6 /* EXTestTriangleSpriteLayer.h */,
+				E0ACBB4A17990FFA0062C3C6 /* EXTestTriangleSpriteLayer.cpp */,
+			);
+			name = TestTriangleSprite;
+			path = Classes/TestTriangleSprite;
+			sourceTree = "<group>";
+		};
 		E0BFE3DC178698930064F9D3 /* TestDynamicLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -2194,6 +2221,20 @@
 			);
 			name = TestDynamicLabel;
 			path = Classes/TestDynamicLabel;
+			sourceTree = "<group>";
+		};
+		E0E5D97C17A9E6C000B5031F /* TestWebView */ = {
+			isa = PBXGroup;
+			children = (
+				E0E5D97D17A9E71C00B5031F /* EXWebViewLayer.h */,
+				E0E5D97E17A9E71C00B5031F /* EXWebViewLayer.mm */,
+				E0E5D98017A9E71C00B5031F /* EXUIWebViewBridge.h */,
+				E0E5D97F17A9E71C00B5031F /* EXUIWebViewBridge.mm */,
+				E0E5D98417A9E7A300B5031F /* EXTestWebViewLayer.h */,
+				E0E5D98317A9E7A300B5031F /* EXTestWebViewLayer.cpp */,
+			);
+			name = TestWebView;
+			path = Classes/TestWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2262,6 +2303,7 @@
 				E0322111178D43C900E038BB /* 1.jpg in Resources */,
 				E0322112178D43C900E038BB /* 2.jpg in Resources */,
 				E05B4B1A179774CF00AD7990 /* coc.jpg in Resources */,
+				E03FF26F17A74E1B00DA65A7 /* bg_theme1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2531,6 +2573,10 @@
 				E032210E178D419300E038BB /* EXTestTurnCardLayer.cpp in Sources */,
 				E0322116178D45FF00E038BB /* EXZoomController.cpp in Sources */,
 				E0322119178D467F00E038BB /* EXTestZoomControllerLayer.cpp in Sources */,
+				E0ACBB4C17990FFA0062C3C6 /* EXTestTriangleSpriteLayer.cpp in Sources */,
+				E0E5D98117A9E71C00B5031F /* EXWebViewLayer.mm in Sources */,
+				E0E5D98217A9E71C00B5031F /* EXUIWebViewBridge.mm in Sources */,
+				E0E5D98517A9E7A300B5031F /* EXTestWebViewLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

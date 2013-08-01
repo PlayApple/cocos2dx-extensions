@@ -46,6 +46,8 @@ void EXMainMenuScene::initData()
     m_listData->addObject(CCString::create("Gray Sprite - 创建灰色图"));
     m_listData->addObject(CCString::create("Turn Card - 翻牌效果"));
     m_listData->addObject(CCString::create("Zoom Controller - 场景多点聚焦缩放"));
+    m_listData->addObject(CCString::create("Triangle Sprite - 三角形贴图"));
+    m_listData->addObject(CCString::create("Web View - 网页视图"));
     
     CCLabelTTF* labTitle = CCLabelTTF::create("git: https://github.com/sunny-liu/cocos2dx-extensions\nBlog: http://www.cocos2dev.com", "Helvetica", 20.0);
     labTitle->setPosition(ccp(m_winSize.width * .5, m_winSize.height * .95));

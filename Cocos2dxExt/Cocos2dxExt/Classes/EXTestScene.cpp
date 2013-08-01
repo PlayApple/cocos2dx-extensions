@@ -12,6 +12,8 @@
 #include "EXTestGraySpriteLayer.h"
 #include "EXTestTurnCardLayer.h"
 #include "EXTestZoomControllerLayer.h"
+#include "EXTestTriangleSpriteLayer.h"
+#include "EXTestWebViewLayer.h"
 
 EXTestScene::EXTestScene()
 {
@@ -90,8 +92,15 @@ void EXTestScene::initData(int testId, const char* titleStr)
         case 3:
             addChild(EXTestZoomControllerLayer::create());
             break;
-
             
+        case 4:
+            addChild(EXTestTriangleSpriteLayer::create());
+            break;
+            
+        case 5:
+            addChild(EXTestWebViewLayer::create());
+            break;
+
         default:
             break;
     }

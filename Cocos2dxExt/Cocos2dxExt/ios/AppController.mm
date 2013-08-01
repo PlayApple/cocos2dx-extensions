@@ -31,8 +31,8 @@ static AppDelegate s_sharedApplication;
     // Add the view controller's view to the window and display.
     window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     EAGLView *__glView = [EAGLView viewWithFrame: [window bounds]
-                                     pixelFormat: kEAGLColorFormatRGBA8
-                                     depthFormat: GL_DEPTH_COMPONENT16
+                                     pixelFormat: kEAGLColorFormatRGB565
+                                     depthFormat: GL_DEPTH24_STENCIL8_OES
                               preserveBackbuffer: NO
                                       sharegroup: nil
                                    multiSampling: NO
@@ -41,7 +41,7 @@ static AppDelegate s_sharedApplication;
     // Use RootViewController manage EAGLView
     viewController = [[RootViewController alloc] initWithNibName:nil bundle:nil];
     viewController.wantsFullScreenLayout = YES;
-    __glView.multipleTouchEnabled = YES;
+    [__glView setMultipleTouchEnabled: YES];
     viewController.view = __glView;
 
     // Set RootViewController to window
