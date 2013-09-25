@@ -13,8 +13,8 @@
 USING_NS_CC;
 class EXGrayUtility {
 public:
-    static void enableSprite(CCSprite* sp);
-    static void disableSprite(CCSprite* sp);
+    static void enableGray(CCSprite* sp);
+    static void disableGray(CCSprite* sp);
     
     
 };

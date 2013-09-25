@@ -8,7 +8,7 @@
 
 #include "EXGrayUtility.h"
 
-void EXGrayUtility::enableSprite(CCSprite* sp)
+void EXGrayUtility::disableGray(CCSprite* sp)
 {
     const GLchar* pszFragSource =
     "#ifdef GL_ES \n \
@@ -37,7 +37,7 @@ void EXGrayUtility::enableSprite(CCSprite* sp)
     sp->getShaderProgram()->updateUniforms();
 }
 
-void EXGrayUtility::disableSprite(CCSprite* sp)
+void EXGrayUtility::enableGray(CCSprite* sp)
 {
     const GLchar* pszFragSource =
     "#ifdef GL_ES \n \

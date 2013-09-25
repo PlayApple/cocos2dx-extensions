@@ -45,7 +45,7 @@ void EXTestGraySpriteLayer::initData()
     m_graySprite1 = CCSprite::create("Icon.png");
     m_graySprite1->setPosition(ccp(size.width * .5, size.height * .5));
     addChild(m_graySprite1);
-    EXGrayUtility::disableSprite(m_graySprite1);
+    EXGrayUtility::enableGray(m_graySprite1);
     
     EXGraySprite* graySprite2 = EXGraySprite::create("Icon.png");
     graySprite2->setPosition(ccp(size.width * .65, size.height * .5));
@@ -63,9 +63,9 @@ void EXTestGraySpriteLayer::menuCallback(CCObject* sender)
 {
     m_isGray = !m_isGray;
     if (m_isGray) {
-        EXGrayUtility::disableSprite(m_graySprite1);
+        EXGrayUtility::enableGray(m_graySprite1);
     }else{
-        EXGrayUtility::enableSprite(m_graySprite1);
+        EXGrayUtility::disableGray(m_graySprite1);
     }
     
 }
