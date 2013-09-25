@@ -282,6 +282,7 @@
 		E00FDDBE178573EA00D021D6 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E00FDDBD178573EA00D021D6 /* HelloWorldScene.cpp */; };
 		E00FDDC617857AA000D021D6 /* EXMainMenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E00FDDC417857AA000D021D6 /* EXMainMenuScene.cpp */; };
 		E00FDDCA1785874F00D021D6 /* EXTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E00FDDC81785874F00D021D6 /* EXTestScene.cpp */; };
+		E020076D17F122E700AF331D /* EXGrayUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E020076B17F122E700AF331D /* EXGrayUtility.cpp */; };
 		E0322100178D38C000E038BB /* EXTestDynamicLabelLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E03220FE178D38C000E038BB /* EXTestDynamicLabelLayer.cpp */; };
 		E0322104178D3D4E00E038BB /* EXGraySprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322102178D3D4E00E038BB /* EXGraySprite.cpp */; };
 		E0322107178D3D9600E038BB /* EXTestGraySpriteLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0322105178D3D9600E038BB /* EXTestGraySpriteLayer.cpp */; };
@@ -301,6 +302,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E00CAE3A17B3991800596516 /* EXMemValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXMemValue.h; sourceTree = "<group>"; };
 		E00FDA14178573E300D021D6 /* Cocos2dxExt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocos2dxExt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00FDA17178573E300D021D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E00FDA19178573E300D021D6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -895,6 +897,8 @@
 		E00FDDC517857AA000D021D6 /* EXMainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXMainMenuScene.h; path = Classes/EXMainMenuScene.h; sourceTree = "<group>"; };
 		E00FDDC81785874F00D021D6 /* EXTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EXTestScene.cpp; path = Classes/EXTestScene.cpp; sourceTree = "<group>"; };
 		E00FDDC91785874F00D021D6 /* EXTestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTestScene.h; path = Classes/EXTestScene.h; sourceTree = "<group>"; };
+		E020076B17F122E700AF331D /* EXGrayUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXGrayUtility.cpp; sourceTree = "<group>"; };
+		E020076C17F122E700AF331D /* EXGrayUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXGrayUtility.h; sourceTree = "<group>"; };
 		E03220FE178D38C000E038BB /* EXTestDynamicLabelLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXTestDynamicLabelLayer.cpp; sourceTree = "<group>"; };
 		E03220FF178D38C000E038BB /* EXTestDynamicLabelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTestDynamicLabelLayer.h; sourceTree = "<group>"; };
 		E0322102178D3D4E00E038BB /* EXGraySprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EXGraySprite.cpp; sourceTree = "<group>"; };
@@ -947,6 +951,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E00CAE3817B3651F00596516 /* TestMemDataHolder */ = {
+			isa = PBXGroup;
+			children = (
+				E00CAE3A17B3991800596516 /* EXMemValue.h */,
+			);
+			name = TestMemDataHolder;
+			path = Classes/TestMemDataHolder;
+			sourceTree = "<group>";
+		};
 		E00FDA0B178573E300D021D6 = {
 			isa = PBXGroup;
 			children = (
@@ -2147,6 +2160,7 @@
 		E00FDDB8178573EA00D021D6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E00CAE3817B3651F00596516 /* TestMemDataHolder */,
 				E0E5D97C17A9E6C000B5031F /* TestWebView */,
 				E0ACBB4917990FF00062C3C6 /* TestTriangleSprite */,
 				E0322113178D45FF00E038BB /* ZoomController */,
@@ -2172,6 +2186,8 @@
 				E0322102178D3D4E00E038BB /* EXGraySprite.cpp */,
 				E0322106178D3D9600E038BB /* EXTestGraySpriteLayer.h */,
 				E0322105178D3D9600E038BB /* EXTestGraySpriteLayer.cpp */,
+				E020076C17F122E700AF331D /* EXGrayUtility.h */,
+				E020076B17F122E700AF331D /* EXGrayUtility.cpp */,
 			);
 			name = TestGraySprite;
 			path = Classes/TestGraySprite;
@@ -2520,6 +2536,7 @@
 				E00FDD24178573E900D021D6 /* AttachmentLoader.cpp in Sources */,
 				E00FDD27178573E900D021D6 /* Bone.cpp in Sources */,
 				E00FDD2A178573E900D021D6 /* BoneData.cpp in Sources */,
+				E020076D17F122E700AF331D /* EXGrayUtility.cpp in Sources */,
 				E00FDD2D178573E900D021D6 /* CCSkeleton.cpp in Sources */,
 				E00FDD30178573E900D021D6 /* CCSkeletonAnimation.cpp in Sources */,
 				E00FDD33178573E900D021D6 /* extension.cpp in Sources */,

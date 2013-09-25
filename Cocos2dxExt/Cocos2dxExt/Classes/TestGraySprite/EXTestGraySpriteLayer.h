@@ -21,7 +21,10 @@ public:
     CREATE_FUNC(EXTestGraySpriteLayer);
     
 private:
+    bool m_isGray;
+    CCSprite* m_graySprite1;
     void initData();
+    void menuCallback(CCObject* sender);
 };
 
 #endif /* defined(__Cocos2dxExt__EXTestGraySpriteLayer__) */
